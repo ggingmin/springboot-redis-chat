@@ -53,7 +53,7 @@ public class RedisAppConfig {
         // Read environment variables
         String endpointUrl = System.getenv("REDIS_ENDPOINT_URL");
         if (endpointUrl == null) {
-            endpointUrl = "redis:6379";
+            endpointUrl = "127.0.0.1:6379";
         }
         String password = System.getenv("REDIS_PASSWORD");
 
